@@ -1,0 +1,134 @@
+site_name: META-FOUNDRY Documentation Portal
+site_url: https://victorkvs.github.io/META-FOUNDRY/
+site_description: "Engineering Ecosystem — Standards, Architecture, Factories, AutoDoc, AI Labs"
+site_author: Victor Kulichenko
+
+repo_name: VictorKVS/META-FOUNDRY
+repo_url: https://github.com/VictorKVS/META-FOUNDRY
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+    - content.code.annotate
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - attr_list
+  - tables
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - mkdocs-puml:
+      puml_output_format: svg
+      puml_output_directory: assets/diagrams
+  - awesome-pages
+  - autorefs
+
+nav:
+  - Главная: index.md
+
+  - Foundation:
+      - Миссия: foundation/mission.md
+      - Глоссарий: foundation/glossary.md
+      - Roadmap: foundation/roadmap.md
+
+  - Standards:
+      - Git Governance: standards/GIT_WORKFLOW.md
+      - MSDLC Standard: standards/MSDLC_STANDARD.md
+      - DevSecOps Policy: standards/DEVSECOPS_POLICY.md
+      - Architecture Principles: standards/ARCHITECTURE_PRINCIPLES.md
+      - Golden Security Rules: standards/SECURITY_GOLDEN_RULES.md
+      - Containerization Standard: standards/CONTAINERIZATION_STANDARD.md
+      - Product Creation Chain: standards/PRODUCT_CREATION_CHAIN.md
+      - Secure Build Standard: standards/SECURE_BUILD_STANDARD.md
+
+  - Appendices:
+      - A — Диаграммы: appendices/A_DIAGRAMS.md
+      - B — MSDLC ↔ Git Map: appendices/B_MSDLC_MAPPING.md
+      - C — Git Maturity Model: appendices/C_GIT_MATURITY.md
+      - D — Risk Model: appendices/D_RISK_MODEL.md
+      - E — CODEOWNERS Handbook: appendices/E_CODEOWNERS_HANDBOOK.md
+      - F — DevSecOps Enforcement: appendices/F_DEVSECOPS_ENFORCEMENT.md
+      - G — AutoDoc Engine Spec: appendices/G_AUTODOC_ENGINE.md
+      - H — Templates: appendices/H_TEMPLATES.md
+
+  - Architecture:
+      - L1 — Concepts: architecture/L1_CONCEPTS.md
+      - L2 — Components: architecture/L2_COMPONENTS.md
+      - L3 — Processes: architecture/L3_PROCESSES.md
+      - L4 — Implementation: architecture/L4_IMPLEMENTATION.md
+
+  - Security Factory:
+      - Overview: security_factory/overview.md
+      - Threat Modeling: security_factory/threat_modeling.md
+      - Risk Register: security_factory/risk_register.md
+      - Security Controls: security_factory/security_controls.md
+      - Compliance Matrix: security_factory/compliance_matrix.md
+      - Incident Response: security_factory/incident_response.md
+
+  - Software Factory:
+      - Overview: soft_factory/overview.md
+      - Coding Standards: soft_factory/coding_standards.md
+      - Testing Policy: soft_factory/testing_policy.md
+      - CI/CD Pipeline: soft_factory/ci_cd_pipeline.md
+      - Release Management: soft_factory/release_management.md
+
+  - AI Labs:
+      - Overview: ai_labs/overview.md
+      - Agent Architecture: ai_labs/agent_architecture.md
+      - RAG Pipeline: ai_labs/rag_pipeline.md
+      - LLM Security: ai_labs/llm_security.md
+      - AI Risks: ai_labs/ai_risks.md
+
+  - AutoDoc Engine:
+      - Overview: autodoc/overview.md
+      - Architecture: autodoc/autodoc_architecture.md
+      - Pipelines: autodoc/autodoc_pipelines.md
+      - Config: autodoc/autodoc_config.md
+      - Templates: autodoc/templates/appendix_template.md
+
+  - Presentations:
+      - Git Governance Briefing: presentations/git_governance_briefing.md
+      - MindForge Overview: presentations/mindforge_overview.md
+      - Architecture Deck: presentations/architecture_deck.md
+
+  - Service:
+      - Changelog: service/changelog.md
+      - Revision History: service/revision_history.md
+      - Credits: service/credits.md
+      
+  - Branding:
+      - Логотип: branding/logo.md
+      - Баннеры: branding/banner.md
+      - Цветовая палитра: branding/colors.md
+      - Гайд по стилю: branding/styleguide.md
+      - Бейджи: branding/badges.md

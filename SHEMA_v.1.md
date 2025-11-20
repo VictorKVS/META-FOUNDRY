@@ -1,4 +1,6 @@
 META-FOUNDRY/
+├── mkdocs.yml
+
 └── branding/
     ├── logo.md        #  +
     ├── banner.md      #  +
