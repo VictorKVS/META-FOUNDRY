@@ -1,0 +1,9 @@
+@startuml
+title Containerization Pipeline (Secure)
+
+(*) --> "Build Container Image"
+"Build Container Image" --> "Scan with Trivy"
+"Scan with Trivy" --> "Generate SBOM"
+"Generate SBOM" --> "Sign Image (Cosign)"
+"Sign Image (Cosign)" --> "Push to Registry"
+@enduml

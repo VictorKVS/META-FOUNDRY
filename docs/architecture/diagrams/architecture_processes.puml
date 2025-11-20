@@ -1,0 +1,13 @@
+@startuml
+title META-FOUNDRY Architecture Processes
+
+start
+:MSDLC MF-0 → MF-1;
+:Architecture Review (MF-2);
+:Development (MF-3);
+:Verification (MF-4);
+:Release (MF-5);
+:Documentation Sync (MF-6);
+stop
+
+@enduml

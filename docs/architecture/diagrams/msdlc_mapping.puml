@@ -1,0 +1,12 @@
+@startuml
+title MSDLC ↔ Git Workflow Mapping
+
+state "MF-0 Initiation" --> "Issue Created"
+state "MF-1 Analysis" --> "docs/*"
+state "MF-2 Architecture" --> "docs/architecture"
+state "MF-3 Build" --> "feature/*"
+state "MF-4 Verification" --> "PR → CI/CD"
+state "MF-5 Release" --> "release/*"
+state "MF-6 Knowledge" --> "AutoDoc → mkdocs"
+
+@enduml

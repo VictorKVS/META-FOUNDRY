@@ -1,0 +1,11 @@
+@startuml
+title Git Workflow (META-FOUNDRY)
+
+(*) --> "feature/*"
+"feature/*" --> "Pull Request"
+"Pull Request" --> "develop"
+"develop" --> "release/*"
+"release/*" --> "main"
+"main" --> "(*)"
+
+@enduml

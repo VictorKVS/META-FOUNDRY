@@ -1,0 +1,70 @@
+# ==== PYTHON ====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+.Python
+.venv/
+venv/
+env/
+dist/
+build/
+
+# Virtual environments
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# ==== SECURITY RULES ====
+# Никогда не добавлять секреты / ключи / токены
+*.pem
+*.key
+*.crt
+*.p12
+*.rsa
+*.der
+*.asc
+
+# ENV files
+.env
+.env.*
+*.env.local
+config/secrets/*
+secrets/*
+autodoc/engine/llm_client/keys.json
+
+# ==== AI models ====
+*.bin
+*.pth
+*.gguf
+*.pt
+*.onnx
+models/
+checkpoints/
+
+# ==== DATA ====
+data/
+datasets/
+*.sqlite*
+*.db
+*.h5
+
+# ==== SYSTEM ====
+.DS_Store
+Thumbs.db
+
+# ==== LOGS ====
+*.log
+logs/
+
+# ==== EDITOR ====
+.vscode/
+.idea/
+*.code-workspace

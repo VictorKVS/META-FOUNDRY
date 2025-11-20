@@ -1,0 +1,14 @@
+@startuml
+title Product Creation Chain
+
+start
+:Idea (MF-0);
+:Analysis (MF-1);
+:Architecture (MF-2);
+:Build (MF-3);
+:Verification (MF-4);
+:Release (MF-5);
+:Knowledge (MF-6);
+stop
+
+@enduml

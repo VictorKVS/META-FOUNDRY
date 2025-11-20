@@ -1,0 +1,22 @@
+name: Security
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # ежедневно в 03:00
+  workflow_dispatch:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trivy Scan (files)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          format: table
+
+      - name: Semgrep Scan
+        uses: returntocorp/semgrep-action@v1

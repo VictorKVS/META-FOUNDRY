@@ -1,0 +1,14 @@
+@startuml
+title AutoDoc Engine Flow
+
+start
+:Watch Files (git, diagrams);
+:Parse Headers;
+:Generate TOC;
+:Generate Diagrams;
+:Sync Appendices;
+:Update Standards;
+:Publish to MkDocs;
+stop
+
+@enduml

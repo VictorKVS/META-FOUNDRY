@@ -1,0 +1,10 @@
+@startuml
+title Secure Build Pipeline
+
+(*) --> "Dependency Scan"
+--> "Static Analysis"
+--> "Reproducible Build"
+--> "Generate SBOM"
+--> "Sign Artifacts"
+--> "Publish Build Metadata"
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+title Git Architecture L1–L4
+
+package "L1 — Conceptual" {
+    [Principles]
+}
+
+package "L2 — Components" {
+    [Branches]
+    [CI/CD]
+    [Security]
+    [AutoDoc]
+}
+
+package "L3 — Processes" {
+    [Feature Flow]
+    [Release Flow]
+    [Security Flow]
+    [Documentation Flow]
+}
+
+package "L4 — Implementation" {
+    [.pre-commit]
+    [CODEOWNERS]
+    [GitHub Actions]
+}
+
+[Principles] --> [Branches]
+[Branches] --> [Feature Flow]
+[Feature Flow] --> [.pre-commit]
+
+@enduml
