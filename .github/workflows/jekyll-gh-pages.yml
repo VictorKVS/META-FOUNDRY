@@ -1,0 +1,26 @@
+name: Publish Documentation
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-puml
+
+      - name: Build and deploy
+        run: |
+          mkdocs gh-deploy --force
