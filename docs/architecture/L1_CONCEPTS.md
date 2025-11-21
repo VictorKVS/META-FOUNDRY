@@ -1,4 +1,7 @@
 # META-FOUNDRY Architecture — Level L1 (Conceptual)
+## Quantum Data Sphere — Core Representation  
+![Quantum Data Sphere](../assets/banners/quantum-data-sphere-v2.png)
+
 Документ: MF-ARCH-L1
 Версия: 1.0.0
 

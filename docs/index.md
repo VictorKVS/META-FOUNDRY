@@ -1,4 +1,11 @@
-# META-FOUNDRY Documentation Portal
+![META-FOUNDRY — The Path to Mastery](assets/banners/meta-foundry-path-to-mastery.png)
+
+![Quantum Data Sphere](assets/banners/quantum-data-sphere-v2.png)
+
+# META-FOUNDRY  
+## The Path to Mastery
+### Engineering Intelligence. Secure-by-Design.
+
 
 
 Добро пожаловать в корпоративный портал документации META-FOUNDRY.
