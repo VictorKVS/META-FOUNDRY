@@ -1,26 +1,45 @@
-name: Publish Documentation
+name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - name: Install MkDocs
+      - name: Install MkDocs and plugins
         run: |
+          pip install mkdocs
           pip install mkdocs-material
           pip install mkdocs-puml
 
-      - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+      - name: Build site
+        run: mkdocs build --verbose --clean
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
